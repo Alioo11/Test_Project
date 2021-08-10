@@ -1,0 +1,444 @@
+.intro {
+  height: 775px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.intro-child {
+  flex: 1;
+
+  padding: 3%;
+  position: relative;
+}
+.with-back {
+  display: block;
+}
+.without-back {
+  display: none;
+  padding-top: 50px;
+}
+.doc {
+  top: 0;
+  left: 0;
+  margin-left: -20%;
+  bottom: 0;
+  right: 0;
+  width: 120%;
+  height: 100%;
+  border: none;
+}
+
+.content-box {
+  padding: 10%;
+  right: 0;
+  direction: rtl;
+}
+
+.content-box h1 {
+  color: var(--blue);
+  font-size: 4em;
+}
+.content-box h3 {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.btn-box {
+  display: felx;
+  flex-direction: row;
+}
+
+.content-box button {
+  margin: 10px;
+  margin-right: none;
+  padding: 5%;
+  font-size: 1.1em;
+}
+
+.med-stor-join {
+  background-color: white;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+.download {
+  color: white;
+  background-color: var(--blue);
+}
+
+/***************************************************************************/
+
+.about-darmanito-container {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+}
+.about-darmanito-container > :first-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-darmanito-container-child {
+  direction: rtl;
+  flex: 1;
+}
+
+.app-prev-container {
+  width: 20em;
+  max-width: 356px;
+  max-height: 356px;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: var(--lightblue);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.about-darmanito-content-box {
+  overflow: auto;
+  padding: 50px;
+}
+.about-darmanito-des {
+  display: flex;
+}
+.about-darmanito-logobox {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.about-darmanito-logobox div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px 0px 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+/***************************************************************/
+/*************************************************************/
+.facilities-darmanito {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+}
+.facilities-darmanito-child {
+  padding: 5em;
+}
+.facilities-darmanito > :first-child {
+  flex: 3;
+}
+.facilities-darmanito > :last-child {
+  flex: 5;
+  overflow-y: auto;
+}
+
+.facilities-icon-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 60px;
+  justify-items: stretch;
+}
+
+.facilities-icon {
+  height: 12em;
+  border-radius: 25px;
+  padding: auto;
+}
+
+.facilities-icon-box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.facilities-icon-box div img {
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  border: none;
+}
+
+.facilities-darmanito-section2 h2 {
+  margin-top: 100px;
+}
+.step-by-step {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.step-by-step-arrow {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(270deg);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--lightblue);
+  color: var(--blue);
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--green);
+  transform: rotate(0deg);
+}
+
+.step-by-step-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.step-by-step-textbox p {
+  margin-right: 20px;
+}
+
+.vl {
+  border: 1px solid var(--gray);
+  width: 0;
+  height: 130px;
+  margin-right: 17px;
+}
+/***********************************************************************************/
+/************************************************************************************/
+.app-download {
+  background-color: var(--blue);
+  overflow: hidden;
+}
+
+.app-download-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  direction: rtl;
+  color: white;
+}
+
+.app-download-container > :first-child {
+  flex: 3;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-download-inputfield {
+  display: flex;
+  flex-direction: row-reverse;
+  direction: rtl;
+  background-color: white;
+  border-radius: 15px;
+  width: 500px;
+  height: 65px;
+}
+
+.app-download-inputfield button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  height: 70%;
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.app-download-inputfield input {
+  border: none;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.app-download-container > :last-child {
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+}
+.app-download-container > :last-child img {
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+}
+.download-section {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.download-section img {
+  margin: 20px;
+}
+
+.reg-medstore-container {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  margin-left: -45%;
+  border-radius: 15px;
+  height: 30em;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.reg-medstore-container :first-child {
+  align-self: flex-end;
+}
+.reg-medstore-container > :last-child {
+  direction: rtl;
+}
+.inpfield {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  width: 100%;
+  height: 5em;
+  margin-top: 50px;
+}
+.inpfield input {
+  height: 100%;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  width: 60%;
+  font-size: 1.5em;
+}
+.inpfield button {
+  width: 30%;
+  margin-right: auto;
+  align-self: center;
+  color: white;
+  background-color: var(--blue);
+}
+
+@media only screen and (max-width: 1120px) {
+  .content-box {
+    padding-top: 200px;
+  }
+  .content-box h1 {
+    font-size: 2.5em;
+  }
+  .content-box h3 {
+    font-size: 1em;
+  }
+  .content-box button {
+    font-size: 0.8em;
+  }
+  .app-download-container > :last-child img {
+    width: 130%;
+  }
+  .app-prev-container {
+    width: 13em;
+  }
+  .about-darmanito-logobox {
+    display: none;
+  }
+  .facilities-icon-box {
+    grid-gap: 20px;
+  }
+  .facilities-icon {
+    height: 9em;
+  }
+
+  .inpfield input {
+    font-size: 0.8em;
+  }
+  .inpfield button {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+  }
+  .doc {
+    margin-left: 0;
+    width: 80%;
+  }
+  .with-back {
+    display: none;
+  }
+  .without-back {
+    display: block;
+  }
+  .content-box {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-box button {
+    font-size: 1.2em;
+  }
+  .content-box h1 {
+    font-size: 2em;
+  }
+  .btn-box {
+    flex-direction: column;
+  }
+  .app-prev-container {
+    width: 20em;
+  }
+
+  .reg-medstore-container {
+    margin-top: 10px;
+    margin-bottom: 0;
+    flex-direction: column;
+    height: 40em;
+  }
+
+  .about-darmanito-container {
+    flex-direction: column;
+  }
+  .about-darmanito-logobox {
+    display: none;
+  }
+  /**************************************/
+  .facilities-darmanito {
+    flex-direction: column;
+  }
+  .facilities-darmanito > :last-child {
+    position: relative;
+  }
+  .facilities-icon-box {
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 0.5fr;
+    grid-gap: 5px;
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
+  .facilities-icon {
+    width: 13em;
+    height: 13em;
+  }
+  /******************************************/
+}

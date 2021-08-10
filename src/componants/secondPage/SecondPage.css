@@ -1,0 +1,224 @@
+.make-your-medstore-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  direction: rtl;
+  margin-top: 100px;
+}
+.make-your-medstore-container > div {
+  padding: 3%;
+  flex: 1;
+  /* border: 3px dashed blue; */
+  height: 100vh;
+}
+.make-your-medstore-container > :first-child {
+  /* background-color: lightblue; */
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.make-your-medstore-container > :first-child h1 {
+  color: var(--blue);
+}
+.make-your-medstore-container > :first-child p {
+  color: #222;
+  font-weight: 100;
+}
+
+.make-your-medstore-container > :last-child {
+  /* background-color: lightgreen; */
+  flex: 5;
+  position: relative;
+}
+
+.reg-medstor-card {
+  position: absolute;
+  left: 30%;
+  width: 450px;
+  height: 100px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.reg-card-1 {
+  left: -100;
+  top: 15px;
+  width: 430px;
+  height: 100px;
+}
+.reg-card-2 {
+  font-size: 0.7em;
+  left: 250px;
+  top: 180px;
+  width: 280px;
+  height: 70px;
+  filter: opacity(60%);
+}
+.reg-card-2 :first-child img {
+  width: 5em;
+}
+
+.reg-card-3 {
+  left: 60px;
+  top: 330px;
+  font-size: 0.6em;
+  width: 250px;
+  height: 50px;
+  filter: opacity(60%);
+}
+.reg-card-3 :first-child img {
+  width: 3em;
+}
+
+.reg-medstor-card :first-child > img {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* .reg-medstor-card span {
+  position: absolute;
+  left: 0;
+  color: white;
+  padding: 8px;
+  background-color: var(--blue);
+  border-radius: 15px;
+} */
+.reg-medstor-card-des {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.reg-medstor-card-des img {
+  margin-left: 20px;
+}
+.quick-register {
+  display: flex;
+  flex-direction: row-reverse;
+  direction: rtl;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  height: 3rem;
+  margin-top: 50px;
+}
+
+.quick-register button {
+  background: var(--blue);
+  color: white;
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.quick-register input {
+  background: transparent;
+  border: none;
+  font-size: large;
+  width: 19rem;
+}
+
+.statics {
+  background-color: var(--blue);
+  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 100px;
+}
+
+.statics img {
+  position: absolute;
+}
+
+.left-circle {
+  right: 0;
+  margin-right: -20px;
+}
+
+.right-circle {
+  left: 0;
+  margin-left: -20px;
+}
+.statics section {
+  margin: 20px;
+  text-align: center;
+}
+.statics h1 {
+  font-size: 36px;
+}
+
+.our-services {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto-fill minmax(500px, 1fr) minmax(500px, 1fr);
+}
+.our-services :nth-child(2),
+.our-services :nth-child(3) {
+  justify-self: center;
+}
+
+/* 
+for respnsive change grid coulnm to 1/2  */
+
+.our-service-head {
+  grid-column: 1/3;
+  direction: rtl;
+}
+
+.card {
+  width: 30rem;
+  height: 500px;
+  border-radius: 30px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+}
+
+.card > img {
+  margin-top: 50px;
+}
+
+.card button {
+  background-color: var(--blue);
+  color: white;
+  padding: 10px 60px 10px 60px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  color: var(--darkblue);
+}
+
+@media only screen and (max-width: 1100px) {
+  .our-services {
+    height: 1300px;
+  }
+  .our-service-head {
+    grid-column: 1/2;
+  }
+  .make-your-medstore-container {
+    flex-direction: column-reverse;
+  }
+  .reg-card-1 {
+    position: static;
+  }
+  .reg-card-2 {
+    display: none;
+  }
+  .reg-card-3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .statics {
+    flex-direction: column;
+  }
+}

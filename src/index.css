@@ -1,13 +1,100 @@
+:root {
+  --lightblue: #e6f3ff;
+  --blue: #1894ff;
+  --gray: #e6f3ff;
+  --green: #00de9a;
+  --darkblue: #2361b5;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: examplefont;
+  src: url(./asset&fonts/font/Yekan.ttf);
+  font-family: examplefont2;
+  src: url(./asset&fonts/font/Yekan.woff);
+}
+
+* {
+  font-family: examplefont2;
+}
+
+a {
+  color: rgb(114, 114, 114);
+  text-decoration: none;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin-top: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.section {
+  height: 675px;
+  width: 100%;
+
+  overflow: hidden;
+  justify-content: center;
+}
+
+.border {
+  border: 1px black solid;
+}
+
+.test {
+  flex: 1;
+  border: 3px dashed black;
+}
+.active {
+  border: 3px solid var(--blue);
+  padding: 10px 0px 10px 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-weight: 600;
+  color: var(--blue) !important;
+}
+
+.btn {
+  padding: 15px 35px 15px 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: large;
+}
+.btn-download {
+  background-color: var(--lightblue);
+  color: var(--blue);
+}
+
+.shadow {
+  box-shadow: 0px 0px 20px rgba(24, 48, 255, 0.25);
+}
+
+.heading-title {
+  direction: rtl;
+  color: var(--darkblue);
+  font-weight: 500;
+  border: 4px solid var(--green);
+  padding: 0 20px 0 0;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.deactive {
+  filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 850px) {
+  #nav-downloaad-btn {
+    display: none;
+  }
 }

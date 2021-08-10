@@ -1,0 +1,91 @@
+.support-blue-header {
+  align-items: center;
+  height: 130px;
+  background-color: var(--blue);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  direction: rtl;
+}
+.support-main {
+  display: flex;
+  justify-content: space-around;
+  direction: rtl;
+  margin-top: 50px;
+}
+.support-main > :first-child {
+  align-items: center;
+}
+.support-main :nth-child(4) {
+  display: inline-flex;
+}
+.support-main :nth-child(4) div {
+  margin: 20px;
+}
+
+.support-main > :first-child > :first-child {
+  direction: ltr;
+}
+
+.support-main-lists {
+  display: flex;
+
+  height: 300px;
+}
+
+.support-main-lists ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.support-main-lists ul :first-child {
+  color: black;
+  font-weight: 600;
+}
+
+.support-main-lists ul li {
+  list-style-type: none;
+  font-weight: 100;
+  font-size: 14px;
+  color: #616161;
+}
+.support-app-download-box {
+  margin-top: 20px;
+}
+.support-app-download-box img {
+  margin: 20px;
+}
+@media only screen and (max-width: 700px) {
+  .support-main :first-child {
+    overflow: auto;
+  }
+  .support-main > :nth-child(2),
+  .support-main > :nth-child(3) {
+    display: none;
+  }
+  .support-blue-header {
+    flex-direction: column;
+    height: 200px;
+  }
+  .facilities-darmanito-section2 {
+    margin-bottom: 500px;
+  }
+  .app-download-container {
+    flex-direction: column;
+  }
+  .download-section {
+    flex-direction: column;
+  }
+  .app-download {
+    height: 900px;
+  }
+  .download-section img {
+    width: 130px;
+    justify-self: center;
+  }
+  .download-section :first-child {
+    display: none;
+  }
+}

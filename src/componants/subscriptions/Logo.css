@@ -1,0 +1,17 @@
+.logo-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.logo-text {
+  padding: 10px;
+  font-weight: 100;
+  direction: rtl;
+  margin: 0;
+}
+
+.logo-text p {
+  margin: 0;
+}
+.logo-bold {
+  font-weight: 800;
+}
